@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* itens começam da esquerda */
+  gap: 20px; /* espaço entre logo e links */
+  width: 100%;
+  height: 70px;
+  background-color: #141414; /* preto típico da Netflix */
+  padding: 0 40px; /* respiro lateral */
+}
+
+/* Logo em vermelho estilo Netflix */
+.logo {
+  text-decoration: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #e50914; /* vermelho Netflix */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Links de navegação */
+.favoritos {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+/* efeito hover igual da Netflix */
+.favoritos:hover {
+  color: #b3b3b3;
+}
