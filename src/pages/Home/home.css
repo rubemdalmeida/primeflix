@@ -1,37 +1,40 @@
 .lista-filmes {
-    max-width: 800px;
+    max-width: 1200px; 
     margin: 20px auto;
-    color: #FFF; /* texto branco padrão Netflix */
+    color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
 }
 
 .lista-filmes article {
-    width: 100%;
-    background-color: #141414; /* fundo escuro estilo Netflix */
-    padding: 0;
+    background-color: #141414; 
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-    margin-bottom: 20px; /* espaçamento entre os cards */
     overflow: hidden;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .lista-filmes article:hover {
-    transform: scale(1.02); /* leve zoom no hover */
+    transform: scale(1.05); 
 }
 
 .lista-filmes strong {
     text-align: center;
-    font-size: 22px;
-    display: block;
-    padding: 12px 0;
+    font-size: 18px;
+    padding: 10px;
     background-color: #141414;
-    color: #FFF; /* título branco */
+    color: #FFF;
+    display: block;
 }
 
 .lista-filmes img {
     width: 100%;
-    max-height: 340px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: cover;     
     display: block;
 }
 
@@ -39,17 +42,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 0;
-    font-size: 20px;
-    background-color: #E50914; /* vermelho Netflix */
+    padding: 10px;
+    font-size: 18px;
+    background-color: #E50914; 
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     transition: background-color 0.3s;
+    border-radius: 0 0 8px 8px;
 }
 
 .lista-filmes a:hover {
-    background-color: #B20710; /* vermelho mais escuro no hover */
+    background-color: #B20710;
 }
 
 .loading {
@@ -57,4 +61,5 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    color: #FFF;
 }
