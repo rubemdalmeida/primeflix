@@ -1,0 +1,26 @@
+.not-found {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #141414; /* fundo escuro estilo Netflix */
+}
+
+.not-found h1 {
+  font-size: 120px;
+  color: #FFF; /* título branco */
+}
+
+.not-found h2 {
+  color: #FFF; /* título branco */
+}
+.not-found a {
+  text-decoration: none;
+  background-color: #E50914; /* vermelho Netflix */
+  color: #FFF; /* texto branco */
+  padding: 10px 20px;
+  margin-top: 14px;
+  border-radius: 4px;
+}
